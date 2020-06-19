@@ -21,4 +21,4 @@ services:
       - app01
       - app02
     ports:
-    - '80:80'
+    - '8080:80'
