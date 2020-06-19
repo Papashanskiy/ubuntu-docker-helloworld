@@ -6,4 +6,4 @@ USER ubuntu
 COPY src/app01.py src/wsgi.py src/gunicorn_config.py /home/ubuntu/
 WORKDIR /home/ubuntu/
 EXPOSE 8080
-CMD ["gunicorn", "-c", "gunicorn_config.py", "wsgi:hello"]
+CMD ["gunicorn", "-c", "gunicorn_config.py", "wsgi:app"]
